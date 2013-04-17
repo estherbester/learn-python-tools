@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head><title>Get onto IRC</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+
+</head>
+<body>
+<h1>How to get into IRC</h1>
+
+<h2>Create your account</h2>
+<ol>
+    <li>  Go to http://webchat.freenode.net</li>
+    <li>  For "Nickname", pick an available username (use only letters, numbers, hyphen or underscore)</li>
+    <li>  You can ignore the other fields</li>
+    <li>  Except, fill out the captcha, and hit "Connect"</li>
+</ol>
+
+<br />
+<img src="https://dl.dropboxusercontent.com/u/39730/freenode0.PNG" alt="Webchat window" />
+<br />
+
+
+<h2>Register your Nickname</h2>
+<ol>
+
+    <li>  Pick an insecure password - <strong>WARNING:</strong>The password is transmitted in plain text which means <em>literally anyone on the internet who wants to can read it</em>, so please don't re-use a password you already use! </li>
+    <li>  At the bottom of the messaging window (it should look like the screenshot below), type the following:
+
+    <br />   <tt>/msg nickserv register YOUR_VERY_INSECURE_PASSWORD YOUR_EMAIL_ADDRESS</tt> </li>
+    <li>  Check your email and verify that you are now registered by following their instructions (it'll tell you to type something like the
+following in the message window):<br /> <tt>/msg NickServ VERIFY REGISTER YOUR_NICKNAME VERIFICATION_CODE_FROM_EMAIL )</tt></li>
+    <li>all IRC commands begin with the forward slash. At the bottom of this page you'll find a few more basic commands that are handy to know.</li>
+</ol>
+
+<br />
+<img src="https://dl.dropboxusercontent.com/u/39730/freenode1.PNG" alt="" />
+<br />
+
+
+<h2>Install XChat</h2>
+<ol>
+    <li>  Download from <a href="http://xchat.org">http://xchat.org</a></li>
+    <li>  Install and open. You will get the following window. Fill in Nickname with the nickname you just registered. Fill in the other fields if you'd like.</li>
+    <li>In "Networks", find and select "FreeNode"
+        <br />
+        <img src="https://dl.dropboxusercontent.com/u/39730/freenode2.PNG" alt="" />
+        <br />
+    </li>
+<br />
+    <li>  (Optional) Configure XChat so that you can Identify yourself to IRC and automatically join #cars-python whenever you open XChat.</li>
+    <li> Otherwise, you have to do run these commands yourself every time:  </li>
+    <li> <tt>/msg nickserv identify YOUR_VERY_INSECURE_PASSWORD</tt></li>
+    <li> <tt>/join #cars-python</tt>
+        <br />
+        <img src="https://dl.dropboxusercontent.com/u/39730/freenode3.PNG" alt="" />
+        <br />
+    </li>
+</ol>
+
+<h3>Helpful commands</h3>
+
+<em>To join a channel, type this IRC command in the message window (note that channels begin with the # sign):</em>
+<br />
+<tt>/join #CHANNEL_NAME </tt>
+
+
+<br /><br />
+
+<em>Other useful commands</em>
+<ul>
+<li><tt>/help</tt> -- get help from the IRC bot</li>
+<li><tt>/join #CHANNEL_NAME</tt> -- join a channel</li>
+<li><tt>/me ACTION </tt>-- describe yourself performing an action</li>
+<li><tt>/msg OTHER_PERSON'S_NICKNAME YOUR_MESSAGE </tt> -- send someone a private message</li>
+<li><tt>/part</tt> -- leave a channel</li>
+<li><tt>/quit</tt> -- leave IRC</li>
+</ul>
+
+<p>More <a href="http://www.irchelp.org/irchelp/irctutorial.html">IRC tips and tricks</a></p>
+</body></html>

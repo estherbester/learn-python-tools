@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head><title>Git/Github Setup</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+
+</head>
+<body>
+
+
+<p>
+<strong>Objectives:</strong>
+<ul>
+    <li>Create a github account</li>
+    <li>Push/pull from github repos</li>
+</ul>
+</p>
+
+
+<h1>Before we begin</h1>
+<h1>You should already know what these git commands do</h1>
+<ol>
+    <li><tt>git status</tt></li>
+    <li><tt>git add</tt></li>
+    <li><tt>git commit</tt></li>
+    <li><tt>git log</tt></li>
+</ol>
+
+
+<h1>Configure your git environment</h1>
+<ol>
+    <li>Open up Git Bash</li>
+    <li>Copy the following lines into the shell prompt, one at a time:</li>
+    <li> <tt>git config --global user.email "youremail@cars.com"</tt></li>
+    <li> <tt>git config --global user.name "your name"</tt></li>
+</ol>
+
+<h1>Join Github</h1>
+
+<p>Sign up for an account: github.com</p>
+
+<p>WARNING: Anything you push to github is public to everyone in the world.</p>
+
+<h1>Get the code</h1>
+
+<h2>Fork the main repo from Github.</h2>
+<ol>
+    <li> go to the home repo (enam-cars/learn-python.git)</li>
+    <li> in enam-cars, hit "fork"</li>
+    <li> now you have a fork of the repo in your own account</li>
+    <li> go to your fork and copy the url.</li>
+    <li> in the Git Bash shell, type <pre>git clone [URL]</pre></li>
+</ol>
+
+
+<h2>Track the upstream branch (enam-cars)</h2>
+<ol>
+    <li> go to the home repo (enam-cars/learn-python.git), copy the url</li>
+    <li> in the shell, type <pre>git remote add [enam] [your fork URL]</pre></li>
+    <li> now you are "tracking" my repo, so if I make any changes in my repo, you can pull them down. We'll learn how to do that at the end of this class.</li>
+</ol>
+
+<h2>(Optional) Git credential store</h2>
+If you get sick of typing in your github password every time, you can your Github credentials in Windows.
+<ol>
+<li>Download the Credential Store installer <a href="http://gitcredentialstore.codeplex.com/">here</a>
+    <li>In Git Bash, type <tt>git --exec-path</tt> This will give you the path to the git executable. It's probably something like <tt>C:\Program Files\Git/libexec/git-core/git</tt></li>
+    <li>In Git Bash, navigate to the folder where you saved the Credential Store installer</li>
+    <li>In Git Bash, run this command: <tt>github-credential-store.exe -i [the path you just copied to clipboard]</tt></li>
+    <li>Say "Yes" when the popup asks if you want to store your credentials. </li>
+    <li>If you then get an error message, let Esther or Andrew know. Otherwise, you should not see anything else happen.</li>
+    <li>The next time you push something to Github, you will have to enter your username/password one last time, but after that you will no longer be prompted</li>
+</ol>
+
+
+<h1>Do some stuff!</h1>
+
+<h2>Push</h2>
+
+
+
+<h2>(Advanced) Generating SSH Key for Github</h2>
+
+<p>If you'd prefer to use SSH rather than the password store over HTTPS, use <a href="https://help.github.com/articles/generating-ssh-keys">Github's own guide</a></p>
+
+
+<h2>What's next</h2>
+<ol>
+
+
+</ol>
+
+
+
+
+</body>
+</html>

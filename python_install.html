@@ -1,0 +1,80 @@
+
+<!doctype html>
+<html>
+<head>
+
+<title>Install Python on Windows 7</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+</head>
+
+
+<body>
+<h1>Install Python 2.7 on Windows 7</h1>
+<ol>
+<li> Download the installer at <a href="http://python.org/ftp/python/2.7.4/python-2.7.4.msi">http://python.org</a> (direct link to .msi file)</li>
+
+<li>Run the Python installer</li>
+<li>Follow the instructions on the screen (you can accept all the defaults and click "Next")</li>
+<li>Test that you have Python by opening "Python (command line)"</li>
+<li>You should see a terminal window with Python 2.7.4 at the top and a cursor that looks like this:<tt>>>> _ </tt></li>
+<li>To open the Python interpreter the next time you log into Windows, select "Python (command line)" from the Start menu (ignore the GUI one for now)</li>
+</ol>
+
+
+<h1>Install Gitbash</h1>
+<p>This will install git, a source control tool, and a Linux-like shell on your system. We will discuss what git is used for in class, but for now let's just get it installed.</p>
+
+<ol>
+    <li>Download the installer linked here <a href="https://code.google.com/p/msysgit/downloads/detail?name=Git-1.8.1.2-preview20130201.exe&can=2&q=label%3AFeatured"> from Google code</a></li>
+    <li>Run the installer: accepting the default location.</li>
+    <li>- At "Adjusting your PATH environment", select the first option, "Use Git Bash only."</li>
+    <li>- At "Configuring the line ending conversions," select the first option, "Checkout Windows-style, commit Unix-style line endings."</li>
+    <li>After it's installed, you can run Git Bash from the Start Menu or using the Desktop icon that will have been created during installation</li>
+</ol>
+
+<h3>And you're done!</h3>
+<p>That's all for now! Don't worry if you don't know what to type in the command prompts or if any of this is unfamiliar. If you come to the first class with both these programs installed, we'll be able to start learning Python right away!</p>
+
+<p>If you have questions or problems at any point, talk to Esther or Andrew. You can even post a question on <a href="irc.html">IRC</a> in the #cars-python channel =)</p>
+<br />
+<br />
+
+
+<h1>(Advanced) Add Python paths to your environment</h1>
+<p><em>This part is optional for now</em></p>
+<ol>
+    <li>open Control Panel</li>
+    <li>select System and Security</li>
+    <li>select System </li>
+    <li>On the left, find the link  "Advanced System Settings"</li>
+    <li>Click the button marked "Environment Variables..."</li>
+    <li>A dialog will appear with two windows. In the bottom window, find the line labeled "PATH"</li>
+    <li>Hit the "Edit" button.</li>
+    <li>A smaller dialog will appear with a bunch of text in an editable line. At the END of the line, copy/paste this text (semicolon included):
+           <br />
+           <tt>;c:\python27\;c:\python27\scripts</tt>
+           <br />
+        and save it.
+        <br />
+        <img src="https://dl.dropboxusercontent.com/u/39730/path.png" alt="Path" />
+        <br />
+    </li>
+
+    <li>Now hit the "New.." button. There are two lines to populate -- in the top line, type:
+        <br /><tt>PYTHONPATH</tt>
+        <br />In the bottom line, type:
+        <br />
+        <tt>C:\Python27\Lib;C:\Python27\DLLs;C:\Python27\Lib\lib-tk;</tt>
+        <br />
+        <img src="https://dl.dropboxusercontent.com/u/39730/pythonpath.png" alt="Add Python Path" />
+        <br />
+    </li>
+    <li>Now you can use the Windows shell to run the Python interpreter:</em>Press <tt>[Windows key] + r</tt> and enter "command" -- a command shell will open up. At the prompt, ty'e <tt>python</tt> and you should see the Python prompt as described above.</li>
+</ol>
+
+
+
+
+
+</body>
+</html>
