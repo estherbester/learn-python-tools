@@ -6,18 +6,16 @@
 </head>
 <body>
 
-
-<p>
-<strong>Objectives:</strong>
+<h1>Getting started on GitHub</h1>
+<p><strong>Objectives:</strong></p>
 <ul>
     <li>Create a github account</li>
     <li>Push/pull from github repos</li>
 </ul>
-</p>
 
 
-<h1>Before we begin</h1>
-<h1>You should already know what these git commands do</h1>
+<h2>Before we begin</h2>
+<p>You should already know what these git commands do</p>
 <ol>
     <li><tt>git status</tt></li>
     <li><tt>git add</tt></li>
@@ -26,32 +24,44 @@
 </ol>
 
 
-<h1>Configure your git environment</h1>
+<h2>Configure your git environment</h2>
 <ol>
     <li>Open up Git Bash</li>
-    <li>Copy the following lines into the shell prompt, one at a time:</li>
+    <li>Copy the following lines into the shell prompt, one at a time (include the quotes):</li>
     <li> <tt>git config --global user.email "youremail@cars.com"</tt></li>
     <li> <tt>git config --global user.name "your name"</tt></li>
 </ol>
 
-<h1>Join Github</h1>
 
-<p>Sign up for an account: github.com</p>
+<h2>Join Github</h2>
 
-<p>WARNING: Anything you push to github is public to everyone in the world.</p>
+<p>Sign up for an account at <a href="http://github.com">GitHub</a></p>
 
-<h1>Get the code</h1>
+<p><strong class="warning">WARNING: For our purposes, know that anything work you do on GitHub is public and viewable to everyone in the world!!*</strong></p>
 
-<h2>Fork the main repo from Github.</h2>
+<br />
+
+<h2>Fork a repo from Github.</h2>
+<p>I have prepared a repository of files where we will be doing much of our work from now on. You will copy this repository into your own GitHub account, which is called <em>forking</em></p>
 <ol>
-    <li> go to the home repo (enam-cars/learn-python.git)</li>
-    <li> in enam-cars, hit "fork"</li>
-    <li> now you have a fork of the repo in your own account</li>
-    <li> go to your fork and copy the url.</li>
-    <li> in the Git Bash shell, type <pre>git clone [URL]</pre></li>
+    <li> Go to my Github repo: <a href="https://github.com/enam-cars/learn-python">https://github.com/enam-cars/learn-python</a></li>
+    <li> Locate the "fork" button and press it (see #1 in screencap below)</li>
+    <li> You will now have a fork of the repo in your own account!!<br /><img src="https://dl.dropboxusercontent.com/u/39730/github_fork.png" /></li>
+
 </ol>
 
+<h2>Clone your fork to your working environment (your computer)</h2>
+<ol>
+    <li> Navigate to your fork, in your repo, and copy the HTTP url (see #2 in screencap).</li>
+    <li> In the Git Bash shell, navigate to your User folder and type
+        <br /> <tt>git clone PASTE_THE_URL_YOU_JUST_COPIED_HERE</tt></li>
+    <li> This will automatically download your fork of the GitHub repository from the cloud and save it to a new folder called "learn-python"</li>
+    <li> Verify that the previous statement is true by navigating to the "learn-python" directory and see if the files in there match the ones listed in the GitHub repo<br /><img src="https://dl.dropboxusercontent.com/u/39730/github_clone.png" /></li>
+</ol>
 
+<p>And you're done! (For now)</p>
+
+<div style="display:none;">
 <h2>Track the upstream branch (enam-cars)</h2>
 <ol>
     <li> go to the home repo (enam-cars/learn-python.git), copy the url</li>
@@ -72,23 +82,20 @@ If you get sick of typing in your github password every time, you can your Githu
 </ol>
 
 
-<h1>Do some stuff!</h1>
+<h2>Do some stuff!</h2>
 
 <h2>Push</h2>
-
 
 
 <h2>(Advanced) Generating SSH Key for Github</h2>
 
 <p>If you'd prefer to use SSH rather than the password store over HTTPS, use <a href="https://help.github.com/articles/generating-ssh-keys">Github's own guide</a></p>
 
-
 <h2>What's next</h2>
 <ol>
-
-
 </ol>
 
+</div>
 
 
 
